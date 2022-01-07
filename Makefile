@@ -76,6 +76,9 @@ docs: ## generate Sphinx HTML documentation, including API docs
 servedocs: docs ## compile the docs watching for changes
 	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .
 
+README.rst: README.rst.fstr ecdysis/__init__.py
+	gleandoc README.rst.fstr README.rst
+
 release: dist ## package and upload a release
 	flit publish
 
