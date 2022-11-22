@@ -1,8 +1,6 @@
 """
 Interface to pyprocessmacro
 
-* Command-line interface that handles loading data from common formats
-
 Features
 --------
 
