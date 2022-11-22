@@ -33,6 +33,6 @@ Limitations
 
 __author__ = """Brendan Strejcek"""
 __email__ = 'brendan@datagazing.com'
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 
 from .ecdysis import main # noqa F401
